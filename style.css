@@ -1,0 +1,70 @@
+/* Features Section */
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Features Heading */
+.features-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Features Grid Layout */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Space between the grid items */
+    justify-items: center; /* Center-align grid items horizontally */
+}
+
+/* Individual Feature Box */
+.feature-box {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; /* Limit box size */
+    text-align: left; /* Align content inside boxes to the left */
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+.feature-box h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    color: #0f0502; /* Highlighted number color */
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.feature-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
